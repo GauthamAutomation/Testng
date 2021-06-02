@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Login Test(failed)">
+    <classes>
+      <class name="testngFramework.LoginScript">
+        <methods>
+          <include name="invalidcredentials"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testngFramework.LoginScript -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
+  <test thread-count="5" name="Get Recipt(failed)">
+    <classes>
+      <class name="testngFramework.GetRecipt">
+        <methods>
+          <include name="setup"/>
+          <include name="getReciptforconsumer"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testngFramework.GetRecipt -->
+    </classes>
+  </test> <!-- Get Recipt(failed) -->
+</suite> <!-- Failed suite [Suite] -->
